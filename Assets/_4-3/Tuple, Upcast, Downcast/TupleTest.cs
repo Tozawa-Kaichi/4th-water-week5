@@ -22,6 +22,7 @@ public class TupleTest : MonoBehaviour
                 // 「型を判定」して「ダウンキャスト」する例
                 if (col is CapsuleCollider) // 型の判定
                 {
+                    //ちゃんと調べてからキャストしましょうね
                     int d = ((CapsuleCollider)col).direction;   // ダウンキャスト (Collider -> CapsuleCollider)
                     Debug.Log($"Direction は {d} です。");
                 }
@@ -37,7 +38,9 @@ public class TupleTest : MonoBehaviour
                 }
             }
         }
+        //MeshRenderer mr ;
     }
+
 
     public void DoClass()
     {
